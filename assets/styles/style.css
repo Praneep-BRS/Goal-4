@@ -46,8 +46,7 @@ main {
   background: #313c4e;
   color: #fff;
   padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 15px;
 }
 .intro h2 {
@@ -77,25 +76,23 @@ main {
   line-height: 1.4;
 }
 .intro-heading {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 5px;
 }
 
 /*------------left section--------------*/
 .section-left {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 40px;
 }
 .contact {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 20px;
 }
 .contact-type {
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: 20px auto;
   gap: 10px;
 }
 .contact-type:nth-child(4) {
@@ -121,8 +118,7 @@ main {
 
 /*------------skills------------*/
 .skills-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 15px;
 }
 .skills-list li {
@@ -140,8 +136,7 @@ main {
 .skills,
 .languages,
 .interests {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 25px;
 }
 
@@ -166,18 +161,16 @@ main {
 
 /*------------section-profile (right)------------*/
 .section-profile {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 40px;
 }
 .profile-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 30px;
 }
 .profile-header {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 25px auto;
   gap: 10px;
   border-bottom: 2px solid #697994;
   padding-bottom: 5px;
@@ -192,8 +185,7 @@ main {
   fill: #313c4e;
 }
 .profile-description {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 8px;
 }
 .profile-title {
@@ -207,7 +199,8 @@ main {
   font-weight: 400;
 }
 .date-place {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   align-items: center;
   justify-content: space-between;
   font-size: 14px;
